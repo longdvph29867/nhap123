@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --experimental-specifier-resolution=node src/app.js",
+    "start": "nodemon --experimental-specifier-resolution=node src/index.js",
     "server": "json-server -w db.json --port 3000",
     "dev": "concurrently \"json-server -w db.json --port 3000\" \"nodemon --experimental-specifier-resolution=node src/app.js\""
   },
