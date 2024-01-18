@@ -15,5 +15,5 @@ productRouter.get("/:id", getProductDetail);
 productRouter.delete("/:id", deleteProduct);
 productRouter.put("/:id", checkRequestBodyProduct, updateProduct);
 productRouter.post("/", checkRequestBodyProduct, createProduct);
-
+console.log(123);
 export default productRouter;
