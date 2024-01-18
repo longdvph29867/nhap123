@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
+
   "scripts": {
     "start": "nodemon --experimental-specifier-resolution=node index.js",
     "server": "json-server -w db.json --port 3000",
