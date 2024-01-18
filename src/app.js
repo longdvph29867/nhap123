@@ -12,9 +12,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(`${DB_URI}`).then(() => console.log("Database Connected!"));
+mongoose
+  .connect(`${DB_URI}`)
+  .then(() => console.log("Database Connected!"))
+  .catch((error) => console.log(error));
 
-app.use("/api", router);
+app.use("", router);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
